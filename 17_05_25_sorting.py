@@ -51,8 +51,19 @@ print(arr)
 
 #4th code
 #sorting alphabets
-
-print("Comparisons:", c)
+a= input().split()
+c=0#comparision count
+for j in range(len(a)-1):
+    f=False
+    for i in range(len(a)-1-j):
+        c=c+1
+        if a[i]>a[i+1]:
+            f=True
+            a[i],a[i+1]=a[i+1],a[i]
+    if f==False:
+        break
+print(a)
+print(c)
 
 
 
@@ -73,7 +84,7 @@ print(a)
 
 
 
-#7th code
+#6th code
 # sort in alphabetical order if two words are same till second letter print them as it is
 
 a = ['zebra', 'cat', 'apple', 'car']
@@ -108,7 +119,7 @@ for i in range(len(a) - 1):
 print(a)
 
 
-#8th code
+#7th code
 #sorting sets as prime number in it , in any index
 def prime(x):
     for i in x:
@@ -134,7 +145,7 @@ print(a)
 
 
 
-#9th code
+#8th code
 # an apple a day keeps doctor away sort this statement as lendth of the words an print output as statement
 a = "An apple a day keeps doctor away".split(' ')
 b=[]
@@ -152,7 +163,7 @@ for i in range(len(b)-1):
 print(' '.join(a))
 
 
-#10th code
+#9th code
 #bucket sorting
 #printing the numbers according their frequency
 a=[3,5,4,4,5,6,7,7,8,8,7,6,4,1,1,2,8,8]
@@ -179,7 +190,7 @@ print(c)
 
 
 
-#11th code
+#10th code
 #imp
 '''using key -sort method'''
 def qwe(x):
